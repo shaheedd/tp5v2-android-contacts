@@ -10,7 +10,8 @@ personnalisée, la gestion des photos et des intents explicites/implicites.
 - `DetailActivity` : ouverte par un **Intent explicite**, affiche et permet de
   modifier nom, prénom, téléphone et e-mail.
 - **Appeler** : Intent implicite `ACTION_DIAL` (`tel:`).
-- **Envoyer un e-mail** : Intent implicite `ACTION_SENDTO` (`mailto:`).
+- **Envoyer un e-mail** : Intent implicite `ACTION_SEND` avec type `message/rfc822`
+  et `EXTRA_EMAIL` ; affiche le sélecteur d'applications.
 - **Choisir une photo** : `ActivityResultContracts.GetContent()` ; l'image est
   copiée dans le stockage interne puis exposée via `FileProvider`.
 - **Prendre une photo** : `ActivityResultContracts.TakePicture()` avec Uri

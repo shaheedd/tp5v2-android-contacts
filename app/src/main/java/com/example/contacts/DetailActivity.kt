@@ -155,8 +155,8 @@ class DetailActivity : AppCompatActivity() {
             etEmail.error = getString(R.string.msg_champs_vides)
             return
         }
-        val intent = Intent(Intent.ACTION_SENDTO).apply {
-            data = Uri.parse("mailto:$address")
+        val intent = Intent(Intent.ACTION_SEND).apply {
+            type = "message/rfc822"
             putExtra(Intent.EXTRA_EMAIL, arrayOf(address))
             putExtra(Intent.EXTRA_SUBJECT, "Contact")
         }
