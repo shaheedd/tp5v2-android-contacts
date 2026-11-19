@@ -33,6 +33,16 @@ personnalisée, la gestion des photos et des intents explicites/implicites.
 | `captures/` | Captures d'écran réelles |
 | `compte-rendu/` | Compte rendu PDF |
 
+## Livrables
+
+- [Compte rendu PDF](compte-rendu/compte-rendu-tp5v2.pdf) — démarche, tests, difficultés.
+- [Captures d'écran réelles](captures/) — MainActivity, DetailActivity, modification,
+  galerie, caméra, appel et e-mail.
+
+## Dépôt
+
+https://github.com/shaheedd/tp5v2-android-contacts
+
 ## Compilation
 
 ```powershell
