@@ -161,7 +161,7 @@ class DetailActivity : AppCompatActivity() {
             putExtra(Intent.EXTRA_SUBJECT, "Contact")
         }
         if (intent.resolveActivity(packageManager) != null) {
-            startActivity(intent)
+            startActivity(Intent.createChooser(intent, getString(R.string.envoyer_email)))
         } else {
             toast(R.string.msg_pas_app_mail)
         }
